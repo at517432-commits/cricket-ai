@@ -1,0 +1,13 @@
+packages:
+  "framer-motion": "For sleek scroll animations and entry effects"
+  "@hookform/resolvers": "For Zod form validation in the login section"
+  "recharts": "For the sample dashboard charts to make it look premium"
+images:
+  - path: "artifacts/cricket-analytics/public/images/hero-bg.png"
+    description: "A dark, moody, cinematic background showing a floodlit cricket stadium at night, wide angle, subtle deep blue lighting, heavily blurred to allow white text overlay to be readable."
+    aspect_ratio: "16:9"
+  - path: "artifacts/cricket-analytics/public/images/dashboard-bg.png"
+    description: "Abstract dark blue tech background with subtle data grid, glowing network nodes, and high-tech analytics feel."
+    aspect_ratio: "16:9"
+notes:
+  - "Frontend only application with no backend. Mock actions are wired up with UI toasts."

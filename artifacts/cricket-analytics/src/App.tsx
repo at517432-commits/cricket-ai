@@ -1,0 +1,42 @@
+import { Switch, Route, Router as WouterRouter } from "wouter";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import LandingPage from "@/pages/LandingPage";
+import NotFound from "@/pages/not-found";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+    },
+  },
+});
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/" component={LandingPage} />
+      <Route component={NotFound} />
+    </Switch>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        {/* We add 'dark' class to the main wrapper to enforce the dark theme styling across the app */}
+        <div className="dark">
+          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+            <Router />
+          </WouterRouter>
+          <Toaster />
+        </div>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;
