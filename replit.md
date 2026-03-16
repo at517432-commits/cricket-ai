@@ -94,3 +94,15 @@ Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHea
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
+
+## GitHub Export
+
+The project is mirrored to GitHub at: https://github.com/at517432-commits/cricket-ai
+
+The Replit GitHub OAuth integration was dismissed by the user. GitHub export is done via a Personal Access Token stored as the `GITHUB_TOKEN` secret. To push future updates:
+
+```bash
+git push "https://$GITHUB_TOKEN@github.com/at517432-commits/cricket-ai.git" master:main
+```
+
+Note: If GitHub OAuth integration is set up in the future, use `proposeIntegration("connector:ccfg_github_01K4B9XD3VRVD2F99YM91YTCAF")` instead.
