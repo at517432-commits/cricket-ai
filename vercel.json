@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/cricket-analytics run build",
+  "outputDirectory": "artifacts/cricket-analytics/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
