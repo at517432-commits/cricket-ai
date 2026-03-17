@@ -55,6 +55,14 @@ function LoginForm() {
   });
 
   const onSubmit = async (data: LoginFormValues) => {
+    if (!supabase) {
+      toast({
+        title: "Service unavailable",
+        description: "Authentication is not configured. Please contact support.",
+        variant: "destructive",
+      });
+      return;
+    }
     setLoading(true);
     try {
       const { error } = await supabase.auth.signInWithPassword({
@@ -164,6 +172,14 @@ function SignupForm() {
   });
 
   const onSubmit = async (data: SignupFormValues) => {
+    if (!supabase) {
+      toast({
+        title: "Service unavailable",
+        description: "Authentication is not configured. Please contact support.",
+        variant: "destructive",
+      });
+      return;
+    }
     setLoading(true);
     try {
       const { data: authData, error: authError } = await supabase.auth.signUp({
