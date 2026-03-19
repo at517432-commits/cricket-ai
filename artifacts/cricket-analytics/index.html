@@ -3,11 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Cricket Analytics Platform</title>
+
+    <!-- ═══════════════════════════════════════════════
+         PRIMARY SEO
+    ═══════════════════════════════════════════════ -->
+    <title>CricAI - Cricket Analytics &amp; AI Predictions</title>
+    <meta name="description" content="CricAI uses advanced AI to deliver real-time cricket analytics, player performance predictions, match insights, and live score analysis. Dominate your fantasy team with data-driven cricket intelligence." />
+    <meta name="keywords" content="cricket analytics, AI cricket predictions, cricket player stats, live cricket scores, IPL analytics, cricket performance analysis, fantasy cricket, cricket data, T20 analytics, cricket AI, player batting average, bowling statistics, cricket match prediction, ODI stats, Test cricket analysis" />
+    <meta name="author" content="CricAI" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://cricai.vercel.app/" />
+
+    <!-- ═══════════════════════════════════════════════
+         OPEN GRAPH — Facebook, WhatsApp, LinkedIn
+    ═══════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CricAI" />
+    <meta property="og:title" content="CricAI - Cricket Analytics &amp; AI Predictions" />
+    <meta property="og:description" content="Analyze cricket players and match performance using advanced AI insights. Get batting averages, bowling stats, match predictions and live score analysis — all in one platform." />
+    <meta property="og:url" content="https://cricai.vercel.app/" />
+    <meta property="og:image" content="https://cricai.vercel.app/opengraph.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CricAI - Cricket Analytics Platform powered by AI" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ═══════════════════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cricai" />
+    <meta name="twitter:title" content="CricAI - Cricket Analytics &amp; AI Predictions" />
+    <meta name="twitter:description" content="Analyze cricket players and match performance using advanced AI insights. Get batting averages, bowling stats, and match predictions." />
+    <meta name="twitter:image" content="https://cricai.vercel.app/opengraph.jpg" />
+    <meta name="twitter:image:alt" content="CricAI Cricket Analytics Platform" />
+
+    <!-- ═══════════════════════════════════════════════
+         FAVICON & ICONS
+    ═══════════════════════════════════════════════ -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="msapplication-TileColor" content="#0f172a" />
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — JSON-LD
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://cricai.vercel.app/#website",
+          "url": "https://cricai.vercel.app/",
+          "name": "CricAI",
+          "description": "Cricket Analytics & AI Predictions Platform",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://cricai.vercel.app/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://cricai.vercel.app/#app",
+          "name": "CricAI",
+          "url": "https://cricai.vercel.app/",
+          "description": "AI-powered cricket analytics platform for player performance analysis, match predictions, and live score insights.",
+          "applicationCategory": "SportsApplication",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Player statistics dashboard",
+            "Match analytics",
+            "AI performance prediction",
+            "Live score analysis",
+            "Fantasy cricket insights"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://cricai.vercel.app/#organization",
+          "name": "CricAI",
+          "url": "https://cricai.vercel.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cricai.vercel.app/favicon.svg"
+          },
+          "description": "AI-powered cricket analytics and predictions platform"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         FONTS
+    ═══════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
